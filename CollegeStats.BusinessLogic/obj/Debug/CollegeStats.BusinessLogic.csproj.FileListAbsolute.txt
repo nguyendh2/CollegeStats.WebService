@@ -1,0 +1,9 @@
+C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.BusinessLogic\bin\Debug\CollegeStats.BusinessLogic.dll
+C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.BusinessLogic\bin\Debug\CollegeStats.BusinessLogic.pdb
+C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.BusinessLogic\bin\Debug\CollegeStats.DataAccess.dll
+C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.BusinessLogic\bin\Debug\CollegeStats.DataAccess.pdb
+C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.BusinessLogic\obj\Debug\CollegeStats.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.BusinessLogic\obj\Debug\CollegeStats.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.BusinessLogic\obj\Debug\CollegeStats.BusinessLogic.csproj.CopyComplete
+C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.BusinessLogic\obj\Debug\CollegeStats.BusinessLogic.dll
+C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.BusinessLogic\obj\Debug\CollegeStats.BusinessLogic.pdb
