@@ -21,12 +21,29 @@ namespace CollegeStats.WebService.Controllers
         public JsonResult Get(string collegeName, bool includeRoom = true, bool isOutOfState = false)
         {
             var jsonResponse = new JsonResponseModel();
+            if (string.IsNullOrWhiteSpace(collegeName))
+            {
+                jsonResponse.Status = Status.Error;
+                jsonResponse.Message = "Error: College name is required";
+                return Json(jsonResponse, JsonRequestBehavior.AllowGet);
+            }
+            
             try
             {
-                var data = _service.GetAnnualCost(collegeName, includeRoom, isOutOfState);
-                jsonResponse.Data = data;
-                jsonResponse.Status = Status.Ok;
-                return Json(jsonResponse, JsonRequestBehavior.AllowGet);
+                if (_service.HasCollege(collegeName))
+                {
+                    var data = _service.GetAnnualCost(collegeName, includeRoom, isOutOfState);
+                    jsonResponse.Data = data;
+                    jsonResponse.Status = Status.Ok;
+                    return Json(jsonResponse, JsonRequestBehavior.AllowGet);
+                }
+                else
+                {
+                    jsonResponse.Status = Status.Error;
+                    jsonResponse.Message = "Error: College not found";
+                    return Json(jsonResponse, JsonRequestBehavior.AllowGet);
+                }
+                
             }
             catch (Exception e)
             {
