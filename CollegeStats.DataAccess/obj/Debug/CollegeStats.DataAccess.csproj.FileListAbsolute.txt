@@ -3,3 +3,4 @@ C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.DataAccess\bin\
 C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.DataAccess\obj\Debug\CollegeStats.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.DataAccess\obj\Debug\CollegeStats.DataAccess.dll
 C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.DataAccess\obj\Debug\CollegeStats.DataAccess.pdb
+C:\Users\Thang\source\repos\CollegeStats.WebService\CollegeStats.DataAccess\obj\Debug\CollegeStats.DataAccess.csprojAssemblyReference.cache

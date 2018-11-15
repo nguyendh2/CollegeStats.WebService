@@ -15,7 +15,7 @@ namespace CollegeStats.DataAccess.Dao
         private IList<AnnualCostDto> ListOfAnnualCosts = new List<AnnualCostDto>();
         private bool ListOfAnnualCostsInitialized = false;
         private object ListOfAnnualCostsLock = new object();
-
+        private DateTime PreviousCacheTime = DateTime.Now;
         public AnnualCostDao()
         {
 
@@ -23,7 +23,12 @@ namespace CollegeStats.DataAccess.Dao
 
         public IList<AnnualCostDto> GetAll()
         {
+            if ((DateTime.Now - PreviousCacheTime).Minutes > 30)
+                ListOfAnnualCostsInitialized = false;
+            PreviousCacheTime = DateTime.Now;
+
             LazyInitializer.EnsureInitialized(ref ListOfAnnualCosts,ref ListOfAnnualCostsInitialized,ref ListOfAnnualCostsLock,PopulateListOfAnnualCosts);
+            
             return ListOfAnnualCosts;
         }
 
